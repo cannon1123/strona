@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 6%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 11%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(229, 84%, 5%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(348, 83%, 47%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* Custom StreamHub colors */
+  --primary-dark: hsl(0, 0%, 6%);
+  --secondary-dark: hsl(0, 0%, 11%);
+  --accent-red: hsl(348, 83%, 47%);
+  --premium-gold: hsl(51, 100%, 50%);
+  --success-green: hsl(142, 76%, 36%);
+  --gray-custom: hsl(0, 0%, 70%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 6%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 11%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(229, 84%, 5%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(348, 83%, 47%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-overlay {
+    background: linear-gradient(to right, 
+      hsl(0, 0%, 6%) 0%, 
+      hsla(0, 0%, 6%, 0.8) 50%, 
+      transparent 100%);
+  }
+  
+  .gradient-overlay-bottom {
+    background: linear-gradient(to top, 
+      hsl(0, 0%, 6%) 0%, 
+      transparent 100%);
+  }
+
+  .text-premium {
+    color: var(--premium-gold);
+  }
+
+  .bg-premium {
+    background-color: var(--premium-gold);
+  }
+
+  .text-accent-red {
+    color: var(--accent-red);
+  }
+
+  .bg-accent-red {
+    background-color: var(--accent-red);
+  }
+
+  .text-success-green {
+    color: var(--success-green);
+  }
+
+  .bg-success-green {
+    background-color: var(--success-green);
+  }
+
+  .text-gray-custom {
+    color: var(--gray-custom);
+  }
+
+  .bg-secondary-dark {
+    background-color: var(--secondary-dark);
+  }
+}
+
+@layer utilities {
+  .movie-card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .movie-card-hover:hover {
+    transform: scale(1.05);
+  }
+}
