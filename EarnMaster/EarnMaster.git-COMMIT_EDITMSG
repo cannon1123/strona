@@ -1,0 +1,7 @@
+Allow multiple genres selection when adding new movies to the platform
+
+Replaces the genre text input with a multi-select checkbox list in AddMovieModal component.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: c26647f5-f1a4-4ac8-92f4-f62237a2cc24
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/2962d114-0aab-4cce-ab74-5b92c2a07904/e1713d82-3c90-405e-a9e6-e2dd9b33fb14.jpg
